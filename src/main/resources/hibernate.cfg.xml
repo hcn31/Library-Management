@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+    <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>
+    <property name="hibernate.connection.username">biblioannotation</property>
+    <property name="hibernate.connection.password">0000</property>
+    <property name="hibernate.default_schema">biblioannotation</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hbm2ddl.auto">update</property>
+    <mapping class="ilisi.hibernate.biblio.model.bo.Exemplaire"/>
+    <mapping class="ilisi.hibernate.biblio.model.bo.Livre"/>
+    <mapping class="ilisi.hibernate.biblio.model.bo.Emprunt"/>
+    <mapping class="ilisi.hibernate.biblio.model.bo.EmpruntId"/>
+    <mapping class="ilisi.hibernate.biblio.model.bo.Adherant"/>
+  </session-factory>
+</hibernate-configuration>

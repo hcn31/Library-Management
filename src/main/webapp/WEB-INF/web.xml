@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <display-name>ServletAddLivre</display-name>
+        <servlet-name>ServletAddLivre</servlet-name>
+        <servlet-class>ilisi.hibernate.biblio.controler.ServletAddLivre</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletAddLivre</servlet-name>
+        <url-pattern>/ServletAddLivre</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>Redirect</display-name>
+        <servlet-name>Redirect</servlet-name>
+        <servlet-class>Redirect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Redirect</servlet-name>
+        <url-pattern>/Redirect</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <display-name>ServletUpdateLivre</display-name>
+        <servlet-name>ServletUpdateLivre</servlet-name>
+        <servlet-class>ilisi.hibernate.biblio.controler.ServletUpdateLivre</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletUpdateLivre</servlet-name>
+        <url-pattern>/ServletUpdateLivre</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <display-name>ServletChercherLivre</display-name>
+        <servlet-name>ServletChercherLivre</servlet-name>
+        <servlet-class>ilisi.hibernate.biblio.controler.ServletChercherLivre</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletChercherLivre</servlet-name>
+        <url-pattern>/ServletChercherLivre</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>ServletAuth</display-name>
+        <servlet-name>ServletAuth</servlet-name>
+        <servlet-class>ilisi.hibernate.biblio.controler.ServletAuth</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletAuth</servlet-name>
+        <url-pattern>/ServletAuth</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <display-name>ServletDeleteLivre</display-name>
+        <servlet-name>ServletDeleteLivre</servlet-name>
+        <servlet-class>ilisi.hibernate.biblio.controler.ServletDeleteLivre</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletDeleteLivre</servlet-name>
+        <url-pattern>/ServletDeleteLivre</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <display-name>ServletDeleteAdh</display-name>
+        <servlet-name>ServletDeleteAdh</servlet-name>
+        <servlet-class>ilisi.hibernate.biblio.controler.ServletDeleteAdh</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletDeleteAdh</servlet-name>
+        <url-pattern>/ServletDeleteAdh</url-pattern>
+    </servlet-mapping>
+
+
+    
+    <welcome-file-list>
+        <welcome-file>pageClient.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <display-name>RedirectAdh</display-name>
+        <servlet-name>RedirectAdh</servlet-name>
+        <servlet-class>RedirectAdh</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RedirectAdh</servlet-name>
+        <url-pattern>/RedirectAdh</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <display-name>ServletAddAdh</display-name>
+        <servlet-name>ServletAddAdh</servlet-name>
+        <servlet-class>ilisi.hibernate.biblio.controler.ServletAddAdh</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletAddAdh</servlet-name>
+        <url-pattern>/ServletAddAdh</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <display-name>ServletUpdateAdh</display-name>
+        <servlet-name>ServletUpdateAdh</servlet-name>
+        <servlet-class>ilisi.hibernate.biblio.controler.ServletUpdateAdh</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletUpdateAdh</servlet-name>
+        <url-pattern>/ServletUpdateAdh</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <display-name>ServletChercherAdh</display-name>
+        <servlet-name>ServletChercherAdh</servlet-name>
+        <servlet-class>ilisi.hibernate.biblio.controler.ServletChercherAdh</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletChercherAdh</servlet-name>
+        <url-pattern>/ServletChercherAdh</url-pattern>
+    </servlet-mapping>
+
+
+
+
+    <servlet>
+        <display-name>ServletChercheLivreClient</display-name>
+        <servlet-name>ServletChercheLivreClient</servlet-name>
+        <servlet-class>ilisi.hibernate.biblio.controler.ServletChercheLivreClient</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletChercheLivreClient</servlet-name>
+        <url-pattern>/ServletChercheLivreClient</url-pattern>
+    </servlet-mapping>
+
+
+
+
+    <servlet>
+        <display-name>EffEmpServlet</display-name>
+        <servlet-name>EffEmpServlet</servlet-name>
+        <servlet-class>ilisi.hibernate.biblio.controler.EffEmpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EffEmpServlet</servlet-name>
+        <url-pattern>/EffEmpServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>RendreExp</display-name>
+        <servlet-name>RendreExp</servlet-name>
+        <servlet-class>ilisi.hibernate.biblio.controler.RendreExp</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RendreExp</servlet-name>
+        <url-pattern>/RendreExp</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <display-name>ServletChercherEmpr</display-name>
+        <servlet-name>ServletChercherEmpr</servlet-name>
+        <servlet-class>ilisi.hibernate.biblio.controler.ServletChercherEmpr</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletChercherEmpr</servlet-name>
+        <url-pattern>/ServletChercherEmpr</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>ServletDec</display-name>
+        <servlet-name>ServletDec</servlet-name>
+        <servlet-class>ilisi.hibernate.biblio.controler.ServletDec</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletDec</servlet-name>
+        <url-pattern>/ServletDec</url-pattern>
+    </servlet-mapping>
+</web-app>
+
